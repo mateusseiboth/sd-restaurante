@@ -1,7 +1,7 @@
 package br.com.seisbot.restaurante;
 
 public class Pedido {
-	private String nome;
+    private String nome;
     private long tempoPreparo;
     private String categoria;
 
@@ -23,4 +23,3 @@ public class Pedido {
         return categoria;
     }
 }
-

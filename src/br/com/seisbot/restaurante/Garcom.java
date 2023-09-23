@@ -4,10 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Garcom {
-	private Queue<Pedido> fila = new LinkedList<>();
+    private Queue<Pedido> fila = new LinkedList<>();
 
     public synchronized void adicionarPedido(Pedido pedido) {
-    	System.err.println("Garçom levou o pedido " + pedido.getNome() + " para cozinha");
+        System.err.println("Garçom levou o pedido " + pedido.getNome() + " para cozinha");
         fila.add(pedido);
         notifyAll();
     }
